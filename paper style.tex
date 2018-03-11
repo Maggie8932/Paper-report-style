@@ -1,0 +1,99 @@
+documentclass{report}
+
+\usepackage{graphicx,amsmath,enumerate, amssymb, multirow, anysize, booktabs, threeparttable, amsfonts, bbm, varioref, pdfpages, float, subcaption, setspace, hyperref}
+
+\usepackage[a4paper]{geometry}
+\newgeometry{left=2cm,bottom=2cm, right=2cm}
+
+%% Header
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{} %% put article name here %%
+\lhead{} %% put author name here %%
+\rfoot{Page \thepage}
+
+\makeatletter
+\def\@makechapterhead#1{%
+  \vspace*{0\p@}%
+  {\parindent \z@ \raggedright \normalfont
+    \interlinepenalty\@M
+    \Huge\bfseries  \thechapter.\quad #1\par\nobreak
+    \vskip 25\p@
+  }}
+\makeatother
+
+
+%%cover page%%%
+
+\usepackage{Sweave}
+\begin{document}
+\input{finalreport-concordance}
+
+\begin{titlepage}
+    \vspace*{\fill}
+    \begin{center}
+     
+    
+    \end{center}
+    \vspace*{\fill}
+    
+\end{titlepage}
+
+
+
+%%%%%%%%%%%%% Introduction %%%%%%%%%%%%
+
+
+\newpage
+{\centering\textbf{\Large I. Introduction}\\[0.5cm]}
+
+footnote{\url{}}  %% put reference website %%
+\bigskip
+
+%%%%%%%%%%%%%% Methods %%%%%%%%%%%%%%%%%%%%%%%
+\bigskip
+
+{\centering\textbf{\Large II . Methods}\\[0.5cm]}
+
+  \textbf{Data Description}
+  \bigskip
+  
+  
+  
+  \bigskip
+ \textbf{Exploratory Analysis}
+  \bigskip
+
+  
+  
+\bigskip  
+  \textbf{Statistical Modeling}
+  \bigskip
+  
+
+  
+
+
+%%%%%%%%%%%%%%%%%%% Results %%%%%%%%%%%%%%%%%%%%%
+
+\bigskip
+\bigskip
+{\centering\textbf{\Large III . Results}\\[0.5cm]}
+
+\bigskip
+  
+%%%%%%%%%%%%%%%%%%% Conclusion and Discussion %%%%%%%%%%%%%%%%%%%%%
+\newpage
+\bigskip
+{\centering\textbf{\Large IV. Conclusions and Discussion}\\[0.5cm]}
+
+  
+
+%%%%%%%%%%%%%%%%%%%%%% Appendix %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+{\centering\textbf{\Large Appendix}\\[0.5cm]}
+
+\end{document}
